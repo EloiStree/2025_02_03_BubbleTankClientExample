@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5200239581585321115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5044005958501547749}
+  - component: {fileID: 8536447358850876036}
+  - component: {fileID: 3359714808148496118}
+  m_Layer: 0
+  m_Name: Game State
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5044005958501547749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200239581585321115}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6298620860985169881}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8536447358850876036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200239581585321115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d093bd06f1b385e48b061bd36433495a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_onPlayerStateInGameParsed:
+    m_PersistentCalls:
+      m_Calls: []
+  m_onPlayerInfoReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3359714808148496118}
+        m_TargetAssemblyTypeName: BubbleTankTrackPlayerInfoMono, be.elab.bubbletankclient.Runtime
+        m_MethodName: PushInPlayerInfo
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_playerStateInGames: []
+--- !u!114 &3359714808148496118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5200239581585321115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d646d13e04efa24192aab53f8e8b42f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_trackUsers:
+  - m_playerId: -21
+    m_playerInfo:
+      m_playerIndex: 0
+      m_playerNetworkIndex: 0
+      m_playerTeamIndex: 0
+      m_position: {x: 0, y: 0, z: 0}
+      m_rotationEuler: {x: 0, y: 0, z: 0}
+      m_playerScale: 0
+      m_flatAngleXZ: 0
+      m_timestampReceived: 0
+--- !u!1 &8228376308288133089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6298620860985169881}
+  - component: {fileID: 5416762851938229638}
+  m_Layer: 0
+  m_Name: Tanks In Game Received Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6298620860985169881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228376308288133089}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5044005958501547749}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5416762851938229638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8228376308288133089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b87c8eda2743834e9ff6518287d1ea9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_portId: 8001
+  m_timeBetweenUnityCheck: 0.05
+  m_messageReceived:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8536447358850876036}
+        m_TargetAssemblyTypeName: BubbleTankGameStateToListMono, be.elab.bubbletankclient.Runtime
+        m_MethodName: PushInAsUtf8TextFromWeb
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_threadPriority: 0
+  m_lastReceived: 
+  m_hasBeenKilled: 0
+  m_textType: 0
+  m_timeBetweenStartThread: 0.1
