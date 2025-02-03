@@ -1,0 +1,14 @@
+{
+    "name": "be.elab.bubbletankclient",
+    "version": "0.0.1",
+    "displayName": "Bubble Tank Input Client",
+    "description": "Client to play Bubble tank from Unity3D Input",
+    "unity": "2019.1",
+    "unityRelease": "0b5",
+    "documentationUrl": "https://github.com/EloiStree/2025_02_03_BubbleTankClientExample",
+    "author": {
+        "name": "Eloi Stree",
+        "email": "eloistree@gmail.com",
+        "url": "https://github.com/EloiStree"
+    }
+}
